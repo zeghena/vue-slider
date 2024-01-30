@@ -4,6 +4,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+        activeIndex: 0,
         slides : [
             {
                     image: 'img/01.webp',
@@ -30,5 +31,16 @@ createApp({
            
 
     }
-  }
+
+    
+  },
+
+  methods:{
+    addActive(index) {
+        if(index==this.activeIndex){
+            return "active";
+        }
+    }
+}
+
 }).mount('#app')
