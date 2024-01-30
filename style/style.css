@@ -1,0 +1,64 @@
+body {
+}
+
+.bordered {
+  border: 3px dashed red;
+}
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.carousel-container {
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+}
+.slides-container {
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+.arrow-up {
+  color: white;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  transform: translateX(-50px);
+  border-radius: 50%;
+  background-color: rgba(250, 235, 215, 0.4);
+  cursor: pointer;
+}
+.arrow-down {
+  color: white;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50px);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: rgba(250, 235, 215, 0.4);
+  cursor: pointer;
+}
